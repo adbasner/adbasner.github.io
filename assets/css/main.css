@@ -84,11 +84,11 @@ input, select, textarea {
 
 	html {
 		background-color: #313a3d;
-		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,					center center;
+		/*background-attachment: fixed,						fixed;*/
+		/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
+	/*	background-position: top left,					center center;
 		background-repeat: repeat,						none;
-		background-size: auto,						cover;
+		background-size: auto,						cover;*/
 	}
 
 	html.is-preload *, html.is-preload *:before, html.is-preload *:after {
@@ -2681,7 +2681,7 @@ input, select, textarea {
 /* Main BG */
 
 	.main-bg {
-		-moz-transition: opacity 0.5s ease-out;
+		/*-moz-transition: opacity 0.5s ease-out;
 		-webkit-transition: opacity 0.5s ease-out;
 		-ms-transition: opacity 0.5s ease-out;
 		transition: opacity 0.5s ease-out;
@@ -2695,7 +2695,7 @@ input, select, textarea {
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: -1;
+		z-index: -1;*/
 	}
 
 		.main-bg.active {
