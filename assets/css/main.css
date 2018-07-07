@@ -18,10 +18,10 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
   line-height: 1;
 }
 
@@ -32,7 +32,7 @@ Basic Layout setup
  ****************************/
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -40,7 +40,7 @@ body {
 }
 
 *, *:before, *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 	

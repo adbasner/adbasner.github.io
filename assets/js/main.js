@@ -9,16 +9,19 @@ const Toggle = document.querySelector('#toggle-icon');
 //Add onclick event to icon
 Toggle.addEventListener ('click', navbarToggle);
 
-//Toggles menus when in mobile mode
+//Function to show/hide nav items, called in navbarToggle
+function toggleResponsive(navItem) {
+    if (navItem.className === "nav-item") {
+      navItem.className += " responsive";
+    } else {
+      navItem.className = "nav-item";
+    }
+  }
+
+//Selects .nav-items and calls toggleResponsive to show/hide them
 function navbarToggle() {
   const NavItems = document.querySelectorAll(".nav-item");
-  NavItems.forEach(function toggleResponsive(navItem) {
-		if (navItem.className === "nav-item") {
-	    navItem.className += " responsive";
-		} else {
-	    navItem.className = "nav-item";
-		}
-	})
+  NavItems.forEach(toggleResponsive)
 }
  
 //************************************
