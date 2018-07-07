@@ -21,7 +21,8 @@ function toggleResponsive(navItem) {
 //Selects .nav-items and calls toggleResponsive to show/hide them
 function navbarToggle() {
   const NavItems = document.querySelectorAll(".nav-item");
-  NavItems.forEach(toggleResponsive)
+  const NavItemsArray = Array.from(NavItems);
+  NavItemsArray.forEach(toggleResponsive);
 }
  
 //************************************
