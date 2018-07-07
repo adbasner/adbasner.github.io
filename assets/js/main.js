@@ -21,6 +21,7 @@ function toggleResponsive(navItem) {
 //Selects .nav-items and calls toggleResponsive to show/hide them
 function navbarToggle() {
   const NavItems = document.querySelectorAll(".nav-item");
+  //I converted this to an array for IE support, Array.from did not work. 
   const NavItemsArray = Array.prototype.slice.call(NavItems);
   NavItemsArray.forEach(toggleResponsive);
 }
