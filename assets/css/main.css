@@ -26,6 +26,10 @@ html {
 	box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -110,8 +114,98 @@ header {
 	text-align: center;
 }
 
+header h1:first-child {
+  padding-top: 120px;
+}
+
+header h2 {
+  padding-top: 20px
+}
 .container {
 	max-width: 80%;
 	margin: 0 auto;	
-	padding: 20px;
+  position: relative;
+}
+
+.i-am-text1,
+.i-am-text2,
+.i-am-text3,
+.i-am-text4 {
+  /*height: 200px;*/
+  position: absolute;
+  width: 200px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0 auto;
+  /*text-align: center;*/
+  display: block;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.i-am-text1 {
+  animation-name: anim-1;
+}
+
+.i-am-text2 {
+  animation-name: anim-2;
+}
+
+.i-am-text3 {
+  animation-name: anim-3;
+}
+
+.i-am-text4 {
+  animation-name: anim-4;
+}
+
+@keyframes anim-1 {
+  0% { 
+    opacity: 0;
+  }
+  8.3%, 16.6% {
+    opacity: 1;
+  }
+
+  25%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-2 {
+  0%, 25% { 
+    opacity: 0;
+  }
+  33.3%, 41.6% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-3 {
+  0%, 50% { 
+    opacity: 0;
+  }
+  58.3%, 66.6% {
+    opacity: 1;
+  }
+  75%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-4 {
+  0%, 75% { 
+    opacity: 0;
+  }
+  83.3%, 91.6% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
