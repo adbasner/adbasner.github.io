@@ -84,13 +84,25 @@ header {
   color: white;
 }
 
+/* Name and greeting */
+.intro {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Iam a text */
+.iam {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 /* Adds space between navbar */
-header h1:first-child {
+header p:first-child {
   padding-top: 120px;
 }
 
 /* Spaces out text */
-header h2 {
+header .iam {
   padding-top: 20px
 }
 
