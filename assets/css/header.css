@@ -64,11 +64,6 @@
   .nav-item {
     display: block;
     float: left;
-    border-right: dotted 1px #2f2f2f; 
-  }
-
-  .nav-item:first-child {
-    border-left: dotted 1px #2f2f2f;
   }
 
   .icon {
