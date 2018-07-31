@@ -5,10 +5,16 @@ Quote by Marcus Aurelius
  ****************************/
 
 .quote {
-  padding: 60px;
+  padding: 20px;
   color: white;
   text-align: center;
   background-color: #1E90FF;
+}
+
+@media screen and (min-width: 768px) {
+  .quote {
+    padding: 60px;
+  }
 }
 
 .flex-container {  

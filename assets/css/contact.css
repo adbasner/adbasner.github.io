@@ -49,9 +49,16 @@ Social styling
 
  ****************************/
 
+
 .contact .fab {
-  font-size: 40px;
+  font-size: 36px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact .fab {
+    font-size: 40px;
+  }
 }
 
 .fa-facebook {
