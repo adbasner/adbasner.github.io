@@ -1,3 +1,32 @@
-  
-  background-color: #fdfdfd;
-  color: #2f2f2f;
+/*****************************
+
+Quote by Marcus Aurelius
+
+ ****************************/
+
+.quote {
+  padding: 60px;
+  color: white;
+  text-align: center;
+  background-color: #1E90FF;
+}
+
+.flex-container {  
+  display: flex;
+  justify-content: space-between;
+}
+.qmark {
+  flex: 0 1 auto;
+  font-size: 64px;
+}
+
+.qtext {
+  flex: 0 5 auto;
+  font-size: 24px;
+  padding: 0 10px;
+}
+
+
+.qauthor {
+  margin-top: 20px;  font-size: 24px;
+}

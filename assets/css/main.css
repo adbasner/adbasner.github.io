@@ -37,6 +37,9 @@ html {
 
 body {
   font-family: sans-serif;
+  background-color: #fdfdfd;
+  color: #2f2f2f;
+  font-size: 16px;
 }
 
 *, *:before, *:after {

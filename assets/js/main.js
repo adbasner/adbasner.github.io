@@ -4,10 +4,10 @@
 
 
 //Targets toggle icon
-const Toggle = document.querySelector('#toggle-icon');
+const toggle = document.querySelector('#toggle-icon');
 
 //Add onclick event to icon
-Toggle.addEventListener ('click', navbarToggle);
+toggle.addEventListener ('click', navbarToggle);
 
 //Function to show/hide nav items, called in navbarToggle
 function toggleResponsive(navItem) {
@@ -26,6 +26,20 @@ function navbarToggle() {
   NavItemsArray.forEach(toggleResponsive);
 }
  
+//************************************
+//* Current Date                     *
+//************************************ 
+
+//Selects date span
+const date = document.querySelector('#date'); 
+
+//get current date
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+
+//change info in date span to current date
+date.innerHTML = year;
+
 //************************************
 //* Text Carousel                    *
 //* Replaced with css animate        *

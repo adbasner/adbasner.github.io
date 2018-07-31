@@ -58,9 +58,17 @@
 
 /* Media queries to hide icon and make a top navbar */
 @media screen and (min-width: 769px) {
+  .navbar {
+    margin-left: 40px;
+  }
   .nav-item {
     display: block;
     float: left;
+    border-right: dotted 1px #2f2f2f; 
+  }
+
+  .nav-item:first-child {
+    border-left: dotted 1px #2f2f2f;
   }
 
   .icon {
