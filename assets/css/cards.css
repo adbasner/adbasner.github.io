@@ -33,7 +33,7 @@ Card flexbox layout
   }
 }
  
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .card {
     flex: 0 1 calc(25% - 10px);
   }
@@ -46,8 +46,8 @@ Font awesome and text styling
  ****************************/
 
 .fas {
-  font-size: 128px;
-  line-height: 2;
+  font-size: 96px;
+  line-height: 1.5;
 }
 
 .card h3 {

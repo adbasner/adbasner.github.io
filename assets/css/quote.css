@@ -23,16 +23,22 @@ Quote by Marcus Aurelius
 }
 .qmark {
   flex: 0 1 auto;
-  font-size: 64px;
+  font-size: 78px;
+}
+
+.qmarks {
+  margin-top: 20px;
 }
 
 .qtext {
-  flex: 0 5 auto;
-  font-size: 24px;
-  padding: 0 10px;
+  flex: 0 1 auto;
+  font-size: 18px;
+  padding: 20px 10px;
 }
 
 
 .qauthor {
-  margin-top: 20px;  font-size: 24px;
+  margin-top: 20px;  
+  font-size: 18px;
+  padding-bottom: 20px;
 }

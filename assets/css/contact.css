@@ -6,7 +6,7 @@ General Aurelius
 
 .contact {
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 5px;
 }
 
 /*****************************
@@ -17,7 +17,7 @@ Form styling
 
 .form {
   margin: 20px auto 40px auto;
-  padding: 10px;
+  padding: 0;
   max-width: 768px;
 }
 
@@ -51,13 +51,18 @@ Social styling
 
 
 .contact .fab {
-  font-size: 36px;
+  font-size: 32px;
   margin-top: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 375px) {
   .contact .fab {
     font-size: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact .fab {
+    font-size: 44px;
   }
 }
 

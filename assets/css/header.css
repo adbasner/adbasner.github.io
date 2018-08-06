@@ -57,7 +57,7 @@
 }
 
 /* Media queries to hide icon and make a top navbar */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   .navbar {
     margin-left: 40px;
   }
