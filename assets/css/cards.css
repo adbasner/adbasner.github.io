@@ -9,8 +9,11 @@ Card flexbox layout
 }
 
 .cards {
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
+  margin: 0 auto 40px auto;
   padding: 10px;
+  padding-top: 50px;
+  width: 95%;
 }
 
 .card {
@@ -25,19 +28,13 @@ Card flexbox layout
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 50px;
   }
  
   .card {
-    flex: 0 1 calc(50% - 5px);
+    flex: 0 1 calc(33% - 5px);
   }
 }
  
-@media screen and (min-width: 1280px) {
-  .card {
-    flex: 0 1 calc(25% - 10px);
-  }
-}
  
 /*****************************
 

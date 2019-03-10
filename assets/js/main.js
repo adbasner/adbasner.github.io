@@ -7,16 +7,16 @@
 const toggle = document.querySelector('#toggle-icon');
 
 //Add onclick event to icon
-toggle.addEventListener ('click', navbarToggle);
+toggle.addEventListener('click', navbarToggle);
 
 //Function to show/hide nav items, called in navbarToggle
 function toggleResponsive(navItem) {
-    if (navItem.className === "nav-item") {
-      navItem.className += " responsive";
-    } else {
-      navItem.className = "nav-item";
-    }
+  if (navItem.className === "nav-item") {
+    navItem.className += " responsive";
+  } else {
+    navItem.className = "nav-item";
   }
+}
 
 //Selects .nav-items and calls toggleResponsive to show/hide them
 function navbarToggle() {

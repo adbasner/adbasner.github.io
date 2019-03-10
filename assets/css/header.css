@@ -57,7 +57,7 @@
 }
 
 /* Media queries to hide icon and make a top navbar */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .navbar {
     margin-left: 40px;
   }
@@ -122,13 +122,13 @@ header .iam {
 .i-am-text3,
 .i-am-text4 {
   position: absolute;
-  width: 200px;
+  width: 300px;
   left: 0;
   right: 0;
   z-index: 2;
   margin: 0 auto;
   display: block;
-  animation-duration: 20s;
+  animation-duration: 15s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -146,53 +146,36 @@ header .iam {
   animation-name: anim-3;
 }
 
-.i-am-text4 {
-  animation-name: anim-4;
-}
-
 /* Main animations */
 @keyframes anim-1 {
   0% { 
     opacity: 0;
   }
-  8.3%, 16.6% {
+  11%, 22% {
     opacity: 1;
   }
-
-  25%, 100% {
+  33%, 100% {
     opacity: 0;
   }
 }
 
 @keyframes anim-2 {
-  0%, 25% { 
+  0%, 33% { 
     opacity: 0;
   }
-  33.3%, 41.6% {
+  44%, 55% {
     opacity: 1;
   }
-  50%, 100% {
+  66%, 100% {
     opacity: 0;
   }
 }
 
 @keyframes anim-3 {
-  0%, 50% { 
+  0%, 66% { 
     opacity: 0;
   }
-  58.3%, 66.6% {
-    opacity: 1;
-  }
-  75%, 100% {
-    opacity: 0;
-  }
-}
-
-@keyframes anim-4 {
-  0%, 75% { 
-    opacity: 0;
-  }
-  83.3%, 91.6% {
+  77%, 89% {
     opacity: 1;
   }
   100% {

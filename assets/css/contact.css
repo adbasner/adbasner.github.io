@@ -1,6 +1,6 @@
 /*****************************
 
-General Aurelius
+General form
 
  ****************************/
 
@@ -19,6 +19,11 @@ Form styling
   margin: 20px auto 40px auto;
   padding: 0;
   max-width: 768px;
+  width: 95%;
+}
+
+.form h2 {
+  padding-bottom: 50px;
 }
 
 .form-item {
@@ -28,6 +33,11 @@ Form styling
   margin: 10px 0;
   width: 100%;
   font-size: 16px;
+  outline: none;
+}
+
+.form-item:focus {
+  border-color: #ff711e;
 }
 
 .form-button {
@@ -38,9 +48,20 @@ Form styling
   box-shadow: 3px 3px 5px 1px #aaa;
 }
 
+.form-button:focus {
+  background-color: #ff711e;
+  border-color: #ff711e;
+}
+
 label {
   width: 100%;
   text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    width: 80%;
+  }
 }
 
 /*****************************
@@ -49,21 +70,29 @@ Social styling
 
  ****************************/
 
+.contact h2 {
+  margin-bottom: 20px;
+}
 
-.contact .fab {
+.fab {
   font-size: 32px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 @media screen and (min-width: 375px) {
-  .contact .fab {
+  .fab {
     font-size: 40px;
   }
 }
+
 @media screen and (min-width: 768px) {
-  .contact .fab {
+  .fab {
     font-size: 44px;
   }
+}
+
+.social-background {
+  background-color: white;
 }
 
 .fa-facebook {
@@ -77,6 +106,7 @@ Social styling
 .fa-instagram {
   color: #B93D80;
 }
+
 .fa-linkedin {
   color: #3D91BA;
 }
