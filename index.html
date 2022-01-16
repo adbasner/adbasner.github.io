@@ -1,44 +1,52 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
 	<title>Digitial Home of Andrew Basner</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" type="text/css" href="assets/css/fa.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/fa.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/cards.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/quote.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/science.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/teaching.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/footer.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-	<!-- Navbar and Header -->
-	<div>
-		<nav class="navbar" id="navbar">
-		  <a class="nav-item" href="index.html">Home</a>
-		  <a class="nav-item" href="portfolio.html">Software Development</a>
-		  <a class="nav-item" href="teaching.html">Teaching</a>
-		  <a class="nav-item" href="science.html">Science</a>
-		  <a class="icon" id="toggle-icon">&#9776;</a>
-		</nav>
+	<!-- Navbar-->
+	<nav >
+		<div class="nav-wrapper deep-purple lighten-1">
+			<a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+			<ul class="hide-on-med-and-down left">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">Software Development</a></li>
+				<li><a href="teaching.html">Teaching</a></li>
+				<li><a href="science.html">Science</a></li>
+			</ul>	
+		</div>
+	</nav>
 
-		<header>
-			<div class="container">
-				<p class="intro">Hello</p>  
-				<p class="intro">My name is Andrew</p>
-				<p class="iam">I am a</p>
-				<p class="iam i-am-text1">Software Developer</p>
-				<p class="iam i-am-text2">Teacher</p>
-				<p class="iam i-am-text3">Scientist</p>
-			</div>
-		</header>
-	</div> <!-- navbar and header -->
+	<ul id="nav-mobile" class="sidenav deep-purple lighten-1 ">
+		<li class="active"><a href="index.html" class="grey-text text-lighten-5">Home</a></li>
+		<li><a class="grey-text text-lighten-4" href="portfolio.html">Software Development</a></li>
+		<li><a class="grey-text text-lighten-4" href="teaching.html">Teaching</a></li>
+		<li><a class="grey-text text-lighten-4" href="science.html">Science</a></li>
+	</ul>
+
+
+	<header>
+		<div class="container">
+			<p class="intro">Hello</p>  
+			<p class="intro">My name is Andrew</p>
+			<p class="iam">I am a</p>
+			<p class="iam i-am-text1">Software Developer</p>
+			<p class="iam i-am-text2">Teacher</p>
+			<p class="iam i-am-text3">Scientist</p>
+		</div>
+	</header> 
 
 	<!-- Cards/About -->
   <div class="center">
@@ -71,27 +79,6 @@
       </div> <!-- card-three -->
   	</div> <!-- cards -->
   </div>
-
-	<!-- Quote -->
-	<div class="quote">
-		<div class="flex-container">
-			
-			<div class="quote-flex  qmarks">
-				<span class="qmark">&#8220;</span>
-			</div>
-
-			<div class="quote-flex">
-				<p class="qtext">For there is nothing so pleasing as wisdom itself, when you consider how surefooted and effortless the works of understanding and knowledge are.</p>
-			</div>
-
-			<div class="quote-flex qmarks">
-				<span class="qmark">&#8221;</span>
-			</div>
-
-		</div>
-		
-		<p class="qauthor">~ Marcus Aurelius</p>
-	</div> <!-- quote -->
 
 	<!-- Contact Me -->
 	<div class="contact">
@@ -137,7 +124,8 @@
 	</footer>
 	
 	<!-- Scripts -->
-	<script type="text/javascript" src="assets/js/main.js"></script>			
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>
