@@ -1,49 +1,113 @@
 /*****************************
 
- css reset from 
- https://cssreset.com/scripts/eric-meyer-reset-css/ 
+  Header Styles
+  Includes animation for I am:
 
- ****************************/
+******************************/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  line-height: 1;
+/* Main Styles */
+header {
+  padding-top: 150px;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 450px;
+}
+
+/* Style for animated text. Left, right, and width allow it to be centerd, z index keeps it from being hidden */
+.i-am-text1,
+.i-am-text2,
+.i-am-text3{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: 20 auto;
+  display: block;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Animation names */
+.i-am-text1 {
+  animation-name: anim-1;
+}
+
+.i-am-text2 {
+  animation-name: anim-2;
+}
+
+.i-am-text3 {
+  animation-name: anim-3;
+}
+
+/* Main animations */
+@keyframes anim-1 {
+  0% { 
+    opacity: 0;
+  }
+  11%, 22% {
+    opacity: 1;
+  }
+  33%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-2 {
+  0%, 33% { 
+    opacity: 0;
+  }
+  44%, 55% {
+    opacity: 1;
+  }
+  66%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-3 {
+  0%, 66% { 
+    opacity: 0;
+  }
+  77%, 89% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*****************************
 
-Basic Layout setup
+Font Awesome:
 
- ****************************/
+******************************/
 
-html {
-  box-sizing: border-box;
+.fas {
+  font-size: 90px;
+  padding: 50px 0;
 }
 
-body {
-  font-family: arial, sans-serif;
-  background-color: #fdfdfd;
-  color: #2f2f2f;
-  font-size: 16px;
-}
+/*****************************
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+Cards
 
-	
+******************************/
+.card {
+  margin-bottom: 3em;
+}
+.card-container {
+    padding: 100px 20px 80px 20px;
+  }
+
+@media only screen and (min-width: 993px) {
+  .card-content {
+    min-height: 250px;
+  }
+
+  .card-container {
+    padding: 120px 60px 80px 60px;
+  }
+}

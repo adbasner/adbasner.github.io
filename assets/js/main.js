@@ -18,7 +18,6 @@ date.innerHTML = year;
 
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems);
-  console.log(instances);
+  M.Sidenav.init(elems);
 });
 

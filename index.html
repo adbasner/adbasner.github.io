@@ -5,14 +5,16 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/fa.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/cards.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/footer.css"> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/fa.css"/>
+	<!-- 
+		
+		<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/cards.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/footer.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 </head>
 
 <body>
@@ -22,63 +24,87 @@
 			<a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 			<ul class="hide-on-med-and-down left">
 				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="portfolio.html">Software Development</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
 				<li><a href="teaching.html">Teaching</a></li>
 				<li><a href="science.html">Science</a></li>
 			</ul>	
 		</div>
 	</nav>
 
+	<!-- Sidenav on tab and smaller -->
 	<ul id="nav-mobile" class="sidenav deep-purple lighten-1 ">
 		<li class="active"><a href="index.html" class="grey-text text-lighten-5">Home</a></li>
-		<li><a class="grey-text text-lighten-4" href="portfolio.html">Software Development</a></li>
+		<li><a class="grey-text text-lighten-4" href="portfolio.html">Portfolio</a></li>
 		<li><a class="grey-text text-lighten-4" href="teaching.html">Teaching</a></li>
 		<li><a class="grey-text text-lighten-4" href="science.html">Science</a></li>
 	</ul>
 
-
 	<header>
 		<div class="container">
-			<p class="intro">Hello</p>  
-			<p class="intro">My name is Andrew</p>
-			<p class="iam">I am a</p>
-			<p class="iam i-am-text1">Software Developer</p>
-			<p class="iam i-am-text2">Teacher</p>
-			<p class="iam i-am-text3">Scientist</p>
+			<h3 class="intro">Hello</h3>  
+			<h3 class="intro">I'm Andrew</h3>
+			<h5 class="iam">I'm a</h5>
+			<h5 class="i-am-text1">Software Developer</h5>
+			<h5 class="i-am-text2">Teacher</h5>
+			<h5 class="i-am-text3">Scientist</h5>
 		</div>
 	</header> 
 
-	<!-- Cards/About -->
-  <div class="center">
-    <div class="cards">
-      <div class="card">
-      	<i class="fas fa-laptop"></i>
-        <h3>Web Developer</h3>
-        <p>I've been studying web development for the past two years. I've made a variety of projects which are you free to view on my GitHub or at the link below.</p>
-        <div class="button-box">
-        	<a href=""><button>Coming Soon!</button></a>
-        </div>
-      </div> <!-- card-one -->
-
-  		<div class="card">
-      	<i class="fas fa-book"></i>
-        <h3>Teacher</h3>
-        <p>I am currently a chemistry istructor for general and organic chemistry at Loyola University in Chicago.</p>
-        <div class="button-box">
-        	<a href=""><button>Coming Soon!</button></a>
-        </div>
-    	</div> <!-- card-two -->
-
-  		<div class="card">
-  			<i class="fas fa-flask"></i>
-        <h3>Scientist</h3>
-        <p>While in graduate school, I studied dye-sensitized solar cells, porous antibody-bound hydrogels, and the ligand substitution in Grubb's catalyst.</p>
-        <div class="button-box">
-        	<a href=""><button>Coming Soon!</button></a>
-        </div>
-      </div> <!-- card-three -->
-  	</div> <!-- cards -->
-  </div>
+	<!-- Cards -->
+	<div class="deep-purple lighten-2 card-container">
+		<!-- <div class="container"> -->
+			<div class="row">
+				<!-- card-one -->
+				<div class="col s10 offset-s1 m8 offset-m2 l4">
+					<div class="card hoverable">
+						<div class="card-image center">
+							<i class="fas fa-laptop"></i>
+						</div>
+						<div class="card-content">
+							<p>I've been casually studying web development and data analysis since 2018. I've made a variety of projects which are you free to view on my GitHub or at the link below.</p>
+						</div>
+						<a class="grey-text text-lighten-5" href="portfolio.html">
+							<div class="card-action deep-purple darken-4 center">
+								PORTFOLIO
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- card-two -->
+				<div class="col s10 offset-s1 m8 offset-m2 l4">
+					<div class="card hoverable">
+						<div class="card-image center">
+							<i class="fas fa-book"></i>
+						</div>
+						<div class="card-content">
+							<p>I am currently a chemistry istructor at Loyola University in Chicago. I teac a variety of general chemistry labs and lectures.</p>
+						</div>
+						<a class="grey-text text-lighten-5" href="teaching.html">
+							<div class="card-action deep-purple darken-4 center">
+								TEACHING
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- card-three -->
+				<div class="col s10 offset-s1 m8 offset-m2 l4">
+					<div class="card hoverable">
+						<div class="card-image center">
+							<i class="fas fa-flask"></i>
+						</div>
+						<div class="card-content">
+							<p>While in graduate school, I studied dye-sensitized solar cells, porous antibody-bound hydrogels, and the ligand substitution in Grubb's catalyst. I'm broadly interested in organic chemistry, organometallic chemistry, biochemistry, and chemical education.</p>
+						</div>
+						<a class="grey-text text-lighten-5" href="science.html">
+							<div class="card-action deep-purple darken-4 center">
+								RESEARCH
+							</div>
+						</a>	
+					</div>
+				</div>
+			</div>
+		<!-- </div>	 -->
+	</div>
 
 	<!-- Contact Me -->
 	<div class="contact">
