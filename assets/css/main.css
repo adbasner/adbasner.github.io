@@ -1,12 +1,11 @@
 body {
-  background: #efefef;
-  color: #444;
-
+  background: #fafafa;
+  color: #333;
 }
 /*****************************
 
   Header Styles
-  Includes animation for I am:
+  Includes animation for I am: 
 
 ******************************/
 
@@ -102,7 +101,7 @@ Cards
 ******************************/
 .card {
   margin-bottom: 3em;
-  background: #efefef;
+  background: #fafafa;
 }
 
 .card-container {
@@ -177,7 +176,6 @@ Social styling
 
 .fab {
   font-size: 32px;
-  /*margin-top: 20px;*/
 }
 
 @media screen and (min-width: 375px) {
@@ -226,4 +224,45 @@ Social styling
 
 .fa-youtube {
   color: #EB3324;
+}
+
+/*****************************
+
+Footer Styles
+
+******************************/
+
+#footer-links {
+  padding: 50px;
+}
+
+.footer-link {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-bottom: solid 1px white;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.footer-link:nth-last-of-type(1) {
+  border: none;
+}
+
+@media screen and (min-width: 769px) {
+  #footer-links {
+    padding: 100px;
+  }
+
+  .footer-link {
+    display: inline;
+    padding: 0 10px;
+    border-right: solid 1px white;
+    border-bottom: none;
+  }
+
+  .footer-link:nth-last-of-type(1) {
+    border: none;
+  }
 }

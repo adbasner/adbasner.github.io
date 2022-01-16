@@ -5,11 +5,6 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- 
-		
-		<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/footer.css"> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/fa.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,9 +18,10 @@
 			<a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 			<ul class="hide-on-med-and-down left">
 				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="teaching.html">Teaching</a></li>
-				<li><a href="science.html">Science</a></li>
+				<li><a class="grey-text text-lighten-4" href="portfolio.html">Portfolio</a></li>
+				<li><a class="grey-text text-lighten-4" href="teaching.html">Teaching</a></li>
+				<li><a class="grey-text text-lighten-4" href="science.html">Science</a></li>
+				<li><a class="grey-text text-lighten-4" href="index.html#form-container">Contact Me</a></li>
 			</ul>	
 		</div>
 	</nav>
@@ -33,9 +29,10 @@
 	<!-- Sidenav on tablet and smaller -->
 	<ul id="nav-mobile" class="sidenav deep-purple lighten-1 ">
 		<li class="active"><a href="index.html" class="grey-text text-lighten-5">Home</a></li>
-		<li><a class="grey-text text-lighten-4" href="portfolio.html">Portfolio</a></li>
+		<li><a class="grey-text text-lighten-4"  href="portfolio.html">Portfolio</a></li>
 		<li><a class="grey-text text-lighten-4" href="teaching.html">Teaching</a></li>
 		<li><a class="grey-text text-lighten-4" href="science.html">Science</a></li>
+		<li><a class="grey-text text-lighten-4" href="index.html#form-container">Contact Me</a></li>
 	</ul>
 
 	<header>
@@ -50,7 +47,7 @@
 	</header> 
 
 	<!-- Cards -->
-	<div class="card-container deep-purple lighten-2 ">
+	<div class="card-container deep-purple lighten-3 ">
 		<div class="row">
 			<!-- card-one -->
 			<div class="col s10 offset-s1 m8 offset-m2 l4">
@@ -61,7 +58,7 @@
 					<div class="card-content">
 						<p>I've been casually studying web development and data analysis since 2018. I've made a variety of projects which are you free to view on my GitHub or at the link below.</p>
 					</div>
-					<a class="grey-text text-lighten-5" href="portfolio.html">
+					<a class="grey-text text-lighten-4" href="portfolio.html">
 						<div class="card-action deep-purple darken-4 center">
 							PORTFOLIO
 						</div>
@@ -77,7 +74,7 @@
 					<div class="card-content">
 						<p>I am currently a chemistry istructor at Loyola University in Chicago. I teac a variety of general chemistry labs and lectures.</p>
 					</div>
-					<a class="grey-text text-lighten-5" href="teaching.html">
+					<a class="grey-text text-lighten-4" href="teaching.html">
 						<div class="card-action deep-purple darken-4 center">
 							TEACHING
 						</div>
@@ -93,7 +90,7 @@
 					<div class="card-content">
 						<p>While in graduate school, I studied dye-sensitized solar cells, porous antibody-bound hydrogels, and the ligand substitution in Grubb's catalyst. I'm broadly interested in organic chemistry, organometallic chemistry, biochemistry, and chemical education.</p>
 					</div>
-					<a class="grey-text text-lighten-5" href="science.html">
+					<a class="grey-text text-lighten-4" href="science.html">
 						<div class="card-action deep-purple darken-4 center">
 							RESEARCH
 						</div>
@@ -103,12 +100,12 @@
 		</div>
 	</div>
 
-	<!-- Contact Me -->
-	
+	<!-- Contact Me -->	
 	<div id="form-container" class="container">
 		<div class="row">	
 			<form class="col s12" action="https://formspree.io/f/andrewbasner@gmail.com" method="POST" target="_blank">
-				<h4>Want to be in touch? Fill out and submit this form or find me at one at one of the sites below.</h4>
+				<h4>Want to get in touch? Fill out and submit this form or find me at one at one of the sites below.</h4>
+				<!-- name and email -->
 				<div class="row">
 					<!-- Name -->
 					<div class="col s12 m6 input-field">
@@ -128,16 +125,12 @@
 						<label for="details">What can I help you with?</label>
 					</div>
 				</div>
-
+				<!-- button -->
 				<div class="row">
 					<div class="col s4 offset-s4 ">
-
 						<button id="submit" class="btn deep-purple darken-4" type="submit">Contact me!</button>
 					</div>
 				</div>
-				
-
-				
 			</form>
 		</div>
 	</div>
@@ -155,16 +148,21 @@
   		<a href="https://www.youtube.com/channel/UCh-x5PjpgcLiud7kebyZbXg/" title="Youtube" target="_blank" ><i class="fab fa-youtube"></i></a>
     </div>
 	</div>
-		
 
 	<!-- Footer -->
-	<footer class="footer">
-		<a class="footer-link" href="index.html">Home</a>
-		<a class="footer-link" href="portfolio.html">Software Development</a>
-		<a class="footer-link" href="teaching.html">Teaching</a>
-		<a class="footer-link" href="science.html">Science</a>
-		<div id="center-cr">
-			<p id="copyright"><span>&copy</span><span id="date"></span> Andrew Basner</p>
+	<footer id="footer" class="page-footer deep-purple lighten-1 center">
+		<div id="footer-links" class="container">
+			<a class="footer-link grey-text text-lighten-4" href="index.html">Home</a>
+			<a class="footer-link grey-text text-lighten-4" href="portfolio.html">Portfolio</a>
+			<a class="footer-link grey-text text-lighten-4" href="teaching.html">Teaching</a>
+			<a class="footer-link grey-text text-lighten-4" href="science.html">Science</a>
+			<a class="footer-link grey-text text-lighten-4" href="index.html#form-container">Contact Me</a>
+		</div>
+		
+		<div class="footer-copyright">
+			<div class="container center grey-text text-lighten-4">
+					<span>&copy</span><span id="date"></span> Andrew Basner
+			</div>
 		</div>
 	</footer>
 	
@@ -172,5 +170,4 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-
-</html>
+</html> 
