@@ -1,3 +1,8 @@
+body {
+  background: #efefef;
+  color: #444;
+
+}
 /*****************************
 
   Header Styles
@@ -97,7 +102,9 @@ Cards
 ******************************/
 .card {
   margin-bottom: 3em;
+  background: #efefef;
 }
+
 .card-container {
     padding: 100px 20px 80px 20px;
   }
@@ -110,4 +117,113 @@ Cards
   .card-container {
     padding: 120px 60px 80px 60px;
   }
+}
+
+/*****************************
+
+Forms
+
+******************************/
+
+#form-container {
+  margin: 100px auto;
+}
+
+/* input and label color style*/
+input[type=text], input[type=email], textarea, label {
+  color: #444 !important; 
+  font-size: 18px !important;
+}
+
+/* input field focus */
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border-bottom: 1px solid #311b92 !important;
+  box-shadow: 0 1px 0 0 #9575cd !important;
+  color: #111 !important;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label, .input-field input[type=email]:focus + label, .input-field textarea:focus + label {
+  color: #311b92 !important;
+}
+
+#submit {
+  width: 100%;
+}
+/* To get rid of autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 50px white inset !important;
+  box-shadow: 0 0 0 50px white inset !important;
+}
+
+/*****************************
+
+Social styling
+
+ ****************************/
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.fab {
+  font-size: 32px;
+  /*margin-top: 20px;*/
+}
+
+@media screen and (min-width: 375px) {
+  .fab {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fab {
+    font-size: 54px;
+  }
+}
+
+#social-container {
+  padding-bottom: 100px;
+}
+
+.fa-github-square {
+  color: #000;
+}
+
+.fa-facebook {
+  color: #4867AD;
+}
+
+.fa-linkedin {
+  color: #3D91BA;
+}
+
+.fa-twitter-square {
+  color: #48A0EC;
+}
+
+.fa-medium {
+  color: #68DE7D;
+}
+
+.fa-free-code-camp {
+  color: #2A6118;
+}
+
+.fa-instagram {
+  color: #B93D80;
+}
+
+.fa-youtube {
+  color: #EB3324;
 }
