@@ -108,6 +108,9 @@ Cards
     padding: 100px 20px 80px 20px;
   }
 
+  .card-row {
+    max-width: 1000px;
+  }
 @media only screen and (min-width: 993px) {
   .card-content {
     min-height: 250px;
